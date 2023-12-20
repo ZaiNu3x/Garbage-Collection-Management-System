@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="31dp">
+
+    <Button
+        android:id="@+id/updateBinBtn"
+        android:layout_width="237dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="193dp"
+        android:text="UPDATE BIN"
+        app:icon="@drawable/delivery"
+        app:iconSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteBin" />
+
+    <Button
+        android:id="@+id/createBinBtn"
+        android:layout_width="235dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="174dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="29dp"
+        android:text="CREATE BIN"
+        app:icon="@drawable/trash"
+        app:iconSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/showBinsBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/deleteBin"
+        android:layout_width="236dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="33dp"
+        android:text="DELETE BIN"
+        app:icon="@drawable/cancel"
+        app:iconSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/updateBinBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showBinsBtn" />
+
+    <Button
+        android:id="@+id/showBinsBtn"
+        android:layout_width="235dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="26dp"
+        android:text="SHOW BINS"
+        app:icon="@drawable/delete"
+        app:iconSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/deleteBin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createBinBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
